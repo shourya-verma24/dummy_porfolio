@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio_demo</title>
+    <style>
+        .container{
+            background-color: rgba(210, 209, 207, 0.505);
+        }
+        .head{
+            width: 90%;
+            margin: auto;
+            text-align: center;
+            height: 100px;
+            background-color: rgba(0, 0, 0, 0.778);
+            padding-top: 35px;
+            color: aqua;
+        }
+        
+        .nav-links
+        {
+            display: flex;
+            justify-content: space-around;
+            margin: auto;
+            background-color: rgba(0, 0, 0, 0.737);
+            color: rgb(253, 254, 255);
+            width: 86.5%;
+            height: 38px;
+            border: 1px solid black;
+            border-top-width: 8px;
+        }
+        .nav-links li{
+            margin-right: 20px;
+        }
+        .nav-links>li>a{
+            color: antiquewhite;
+        }
+        .mobile-nav{
+            display: none;
+            text-align: center;
+            color: blue;
+            background-color: gray;
+        }
+
+        
+        .card>img{
+            width: 30%;
+            height: 150px;
+            margin: auto;
+            border-radius: 18px;
+        }
+        .cards{
+            width: 90%;
+            margin:auto
+        }
+        .card{
+            /* display: flex; */
+            border: 1px solid grey;
+            border-radius: 18px;
+            margin: auto;
+            text-align: center;
+        }
+        .content{
+            text-align: center;
+            margin: 2px;
+        }
+        @media screen and (min-width: 768px){
+            .card{
+                display: flex;
+                border: 1px solid grey;
+                border-radius: 18px;
+                margin: 2px;
+             }
+             .card>img
+             {
+              width: 16%;
+              height: 80px;
+              margin: auto;
+             }
+             
+        }
+        @media screen and (max-width:600px) {
+            .nav-links{
+                display: none;
+            }
+            .mobile-nav{
+                display: block;
+            }            
+        }
+            
+
+
+    </style>
+</head>
+<body>
+<div  class="container">
+    <div class="head">
+        <h1>Shourya Verma</h1>
+
+    </div>
+
+    <div class="nav">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Contact Me</a></li>
+            </ul>
+            <select name="mobile" class="mobile-nav">
+                <option value="#">Home</option>
+                <option value="#">Education</option>
+                <option value="#">Projects</option>
+                <option value="#">Skills</option>
+                <option value="#">Contact Me</option>
+            </select>
+        </nav>
+
+    </div>  
+    <div class="cards">
+        <div class="card" id="1">
+            <img src="https://www.kindpng.com/picc/m/171-1712282_profile-icon-png-profile-icon-vector-png-transparent.png" alt="">
+            <div class="content">
+                <h4>Home</h4>
+                <p>I'm a passionate web developer with a love for clean code and creative design. My journey in the world of web development began when I discovered the magic of HTML and CSS. Since then, I've been on an exciting quest to create beautiful and functional websites.</p>
+            </div>
+            
+        </div>
+        <div class="card" id="2">
+            <img src="https://static.vecteezy.com/system/resources/previews/002/219/582/non_2x/illustration-of-book-icon-free-vector.jpg" alt="">
+            <div class="content">
+                <h4>Education</h4>
+                <p>I'm a passionate web developer with a love for clean code and creative design. My journey in the world of web development began when I discovered the magic of HTML and CSS. Since then, I've been on an exciting quest to create beautiful and functional websites.</p>
+            </div>
+            
+        </div>
+        <div class="card" id="3">
+            <img src="https://icon-library.com/images/projects-icon/projects-icon-21.jpg" alt="">
+            <div class="content">
+                <h4>Projects</h4>
+                <p>I'm a passionate web developer with a love for clean code and creative design. My journey in the world of web development began when I discovered the magic of HTML and CSS. Since then, I've been on an exciting quest to create beautiful and functional websites.</p>
+            </div>
+            
+        </div>
+        <div class="card" id="4">
+            <img src="https://thumbs.dreamstime.com/z/skills-icon-trendy-logo-concept-white-background-human-resources-collection-133513629.jpg" alt="">
+            <div class="content">
+                <h4>Skills</h4>
+                <p>I'm a passionate web developer with a love for clean code and creative design. My journey in the world of web development began when I discovered the magic of HTML and CSS. Since then, I've been on an exciting quest to create beautiful and functional websites.</p>
+            </div>
+            
+        </div>
+        <div class="card" id="5">
+            <img src="https://www.vhv.rs/dpng/d/140-1408477_transparent-office-building-clipart-black-and-white-contact.png" alt="">
+            <div class="content">
+                <h4>Contact Me</h4>
+                <p>I'm a passionate web developer with a love for clean code and creative design. My journey in the world of web development began when I discovered the magic of HTML and CSS. Since then, I've been on an exciting quest to create beautiful and functional websites.</p>
+            </div>
+            
+        </div>
+
+
+    </div>  
+</div>
+</body>
+</html>
